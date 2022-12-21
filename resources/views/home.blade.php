@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in!') }} From {{ Auth::user()->country->name }} & phone: {{ Auth::user()->phone->number }}
                 </div>
             </div>
         </div>
