@@ -79,7 +79,7 @@
                             <label for="phone" class="col-md-4 col-form-label text-md-end">{{ __('Phone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" required>
+                                <input id="phone" type="tel" class="form-control @error('phone') is-invalid @enderror" name="phone" required>
 
                                 @error('phone')
                                 <span class="invalid-feedback" role="alert">
