@@ -1,9 +1,10 @@
 import './bootstrap';
-import Vue from "vue";
+import Vue from 'vue'
+import App from './components/User.vue'
 
 window.Vue = Vue;
+Vue.component('User', App);
 
-import User from "./components/User.vue";
-Vue.component('User', User);
-
-new Vue({ el: '#app', render: h => h(User) })
+const app = new Vue({
+    el: '#app'
+});

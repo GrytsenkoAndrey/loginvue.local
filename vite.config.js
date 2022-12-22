@@ -13,4 +13,9 @@ export default defineConfig({
         }),
         vuePlugin()
     ],
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.esm.js',
+        },
+    },
 });
